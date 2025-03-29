@@ -27,7 +27,7 @@ db = client["legalDB"]
 cases_collection = db["cases"]
 
 # --- Initialize Gemini API ---
-genai.configure(api_key="AIzaSyBBdLK55edeg2WrhqacOGqxrcqgiLtUNyo")  # Replace with your key
+genai.configure(api_key="apikey")  # Replace with your key
 
 # --- Load Cases from MongoDB & Generate Embeddings ---
 def load_cases():
