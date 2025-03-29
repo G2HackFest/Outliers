@@ -1,0 +1,314 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* App Container */
+.app-container {
+    min-height: 100vh;
+    /* Updated gradient: a blend of soft purple and blue */
+    background: linear-gradient(135deg, #e0c3fc, #8ec5fc);
+    padding: 30px;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 980px;
+    margin: 0 auto;
+    /* Slight off-white background to add warmth */
+    background: #fefefe;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 24px;
+}
+
+/* Header */
+.app-title {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    /* Updated to a deeper shade of blue for contrast */
+    color: #374785;
+    margin-bottom: 24px;
+}
+
+/* Search Bar */
+.search-container {
+    position: sticky;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #818cf8;
+}
+
+.search-input {
+    width: 80%;
+    padding: 12px 12px 12px 40px;
+    background: #f0f4f8;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #374785;
+    box-shadow: 0 0 0 2px rgba(55, 71, 133, 0.2);
+}
+
+/* Form */
+.form-container {
+    /* Updated gradient: subtle light blue to white */
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 32px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #374785;
+    margin-bottom: 16px;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    font-size: 16px;
+    background: #ffffff;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+    border-color: #374785;
+    box-shadow: 0 0 0 2px rgba(55, 71, 133, 0.2);
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 12px;
+    /* Updated to a deep blue */
+    background: #374785;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 0 4px 12px rgba(55, 71, 133, 0.2);
+}
+
+.submit-button:hover {
+    background: #2a3f5d;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+/* Case List */
+.list-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #374785;
+    margin-bottom: 20px;
+}
+
+.case-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.no-cases {
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    grid-column: span 2;
+}
+
+.case-card {
+    background: linear-gradient(to bottom right, #ffffff, #eef2ff);
+    border: 1px solid #cbd5e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.case-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #374785;
+    margin-bottom: 8px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: #6b7280;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* Case Details */
+.back-button {
+    display: flex;
+    align-items: center;
+    color: #374785;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: color 0.3s;
+}
+
+.back-button:hover {
+    color: #2a3f5d;
+}
+
+.back-button .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.case-details {
+    background: linear-gradient(to bottom right, #eef2ff, #ffffff);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.case-image {
+    width: 100%;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    margin-bottom: 16px;
+}
+
+.case-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #374785;
+    margin-bottom: 12px;
+}
+
+.case-description {
+    font-size: 16px;
+    color: #374151;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    /* Updated to a gradient for a modern look */
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #5a67d8;
+    border-radius: 5px;
+}
+
+/* RAG System */
+.rag-system-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rag-system-container h2 {
+  font-size: 24px;
+  color: #374785;
+  margin-bottom: 16px;
+}
+
+.rag-system-container textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+}
+
+.rag-system-container button {
+  padding: 10px 20px;
+  background: #374785;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.rag-system-container button:hover {
+  background: #2a3f5d;
+}
